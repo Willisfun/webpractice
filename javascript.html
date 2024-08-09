@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width ,initial-scale=1.0"/>
+        <meta charset="utf-8"/>
+        <title>JavaScript 快速開始</title>
+    
+    </head>
+    <body>
+        <div>
+            <span onmouseover="changeToAbout()">關於我</span>
+            <span onmouseover="changeToExps()">學經歷</span>
+        </div>
+        <hr/>
+        <div id="about">大家好，我是will</div>
+        <div id="exps" style="display:none"> 我是電機系畢業，後來當軟體工程師</div>
+        <script>
+            function changeToAbout()
+            {
+                //先取得標籤
+              let aboutDiv=document.querySelector("#about");
+              let expsDiv=document.querySelector("#exps");
+              //再對標籤做操作
+              aboutDiv.style.display="block";
+              expsDiv.style.display="none";
+            }
+            function changeToExps()
+            {
+              //先取得標籤
+              let aboutDiv=document.querySelector("#about");
+              let expsDiv=document.querySelector("#exps");
+              //再對標籤做操作
+              aboutDiv.style.display="none";
+              expsDiv.style.display="block";
+            }
+
+        </script>
+    </body>
+</html>
